@@ -9,12 +9,84 @@
     <!-- BOOTSTRAP CDN -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
 </head>
 
-<body>
+<body class="background-purple text-light ">
     <main>
+        <section>
+            <div class="container height-100 d-flex">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-8">
+                        <h1 class="text-center">El banco del desarrollo (web)</h1>
+                        <img src="./img/logo-devf-white.svg" class="img-responsive mb-5">
 
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row px-5">
+                            <div class="col-12 mb-3">
+                                <h2 class="text-center">Selecciona tu cuenta</h2>
+                            </div>
+                            <!-- Card user Mali -->
+                            <div class="col userCard" id="mali">
+                                <i class="bi bi-person-circle size3x"></i>
+                                <h3 id="user1">Mali</h3>
+                                <div class="passwordField" id="passMali">
+                                    <div class="mb-3">
+                                        <label class="form-label">Ingresa la contraseña</label>
+                                        <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="maliPass" name="Mali">
+                                        <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#maliPass').value), document.querySelector('#maliPass').name );">Ingresar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Card user Gera-->
+                            <div class="col userCard" id="gera">
+                                <i class="bi bi-person-circle size3x"></i>
+                                <h3 id="user2">Gera</h3>
+                                <div class="passwordField" id="passGera">
+                                    <div class="mb-3">
+                                        <label for="geraPass" class="form-label">Ingresa la contraseña</label>
+                                        <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="geraPass" name="Gera">
+                                        <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#geraPass').value), document.querySelector('#geraPass').name)">Ingresar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Card user Maui-->
+                            <div class="col userCard" id="maui">
+                                <i class="bi bi-person-circle size3x"></i>
+                                <h3 id="user3">Maui</h3>
+                                <div class="passwordField" id="passMaui">
+                                    <div class="mb-3">
+                                        <label for="mauiPass" class="form-label">Ingresa la contraseña</label>
+                                        <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="mauiPass" name="Maui">
+                                        <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#mauiPass').value), document.querySelector('#mauiPass').name);">Ingresar</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="message" class="text-center text-warning mt-4"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
+    <!-- Custom Scripts -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
