@@ -1,5 +1,5 @@
 .background-purple {
-    background: linear-gradient(-45deg, purple, #420342, #1b001b);
+    background: linear-gradient(-45deg, purple, #00d6d6);
     background-repeat: no-repeat;
     background-size: 400% 400%;
     height: 100vh;
@@ -80,4 +80,14 @@
     position: relative;
     top: 33px;
     right: 25px;
+}
+
+.hiddenElement {
+    opacity: 0;
+    transition: 1s;
+}
+
+.visibleElement {
+    opacity: 1;
+    transition: 1s;
 }

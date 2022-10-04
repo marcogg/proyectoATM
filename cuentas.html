@@ -35,8 +35,8 @@
                                 <p class="text-danger" id="errorAccount"></p>
 
                                 <div class="row justify-content-center mt-5 ">
-                                    <div class="col-6">
-                                        <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="row hiddenElement" id="savingForm">
                                             <div class="col-2">
 
                                             </div>
@@ -54,8 +54,8 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row">
+                                    <div class="col-lg-6 col-sm-12 mt-4">
+                                        <div class="row hiddenElement" id="withdrawalForm">
                                             <div class="col-2">
 
                                             </div>
@@ -64,7 +64,7 @@
                                                 <input type="number" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="withdrawal">
                                             </div>
                                             <div class="col-2">
-                                                <input type="button" value="-" class="btnPlus" id="plusWithdrawal">
+                                                <input type="button" value="-" class="btnPlus" id="plusWithdrawal" onclick="withdrawal()">
                                             </div>
 
                                         </div>
@@ -74,10 +74,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <p><a href="index.html" class="text-white text-center">Regresar</a></p>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p><a href="index.html" class="text-white text-center">Regresar</a></p>
                             </div>
                         </div>
                     </div>

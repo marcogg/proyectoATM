@@ -30,9 +30,9 @@ mauiBox.onclick = () => {
 
 // PASSWORD EVALUATION
 function passVerification(userPass, userName) {
-    let inputMali = document.querySelector('#maliPass').value
-    let inputGera = document.querySelector('#geraPass').value
-    let inputMaui = document.querySelector('#mauiPass').value
+    // let inputMali = document.querySelector('#maliPass').value
+    // let inputGera = document.querySelector('#geraPass').value
+    // let inputMaui = document.querySelector('#mauiPass').value
 
     if (userPass === passMali && userName === nameMali) {
         let nombreStoredMali = localStorage.setItem("userName", "Mali")

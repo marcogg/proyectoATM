@@ -33,43 +33,42 @@
                             <div class="col-12 mb-3">
                                 <h2 class="text-center">Selecciona tu cuenta</h2>
                             </div>
-                            <!-- Card user Mali -->
-                            <div class="col userCard" id="mali">
-                                <i class="bi bi-person-circle size3x"></i>
-                                <h3 id="user1">Mali</h3>
-                                <div class="passwordField" id="passMali">
-                                    <div class="mb-3">
-                                        <label class="form-label">Ingresa la contraseña</label>
-                                        <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="maliPass" name="Mali">
-                                        <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#maliPass').value), document.querySelector('#maliPass').name ); getData('Mali');">Ingresar</button>
+                            <div class="row">
+                                <!-- Card user Mali -->
+                                <div class="col-lg-3 col-12 userCard" id="mali">
+                                    <i class="bi bi-person-circle size3x"></i>
+                                    <h3 id="user1">Mali</h3>
+                                    <div class="passwordField" id="passMali">
+                                        <div class="mb-3">
+                                            <label class="form-label">Ingresa la contraseña</label>
+                                            <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="maliPass" name="Mali">
+                                            <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#maliPass').value), document.querySelector('#maliPass').name ); getData('Mali');">Ingresar</button>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <!-- Card user Gera-->
-                            <div class="col userCard" id="gera">
-                                <i class="bi bi-person-circle size3x"></i>
-                                <h3 id="user2">Gera</h3>
-                                <div class="passwordField" id="passGera">
-                                    <div class="mb-3">
-                                        <label for="geraPass" class="form-label">Ingresa la contraseña</label>
-                                        <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="geraPass" name="Gera">
-                                        <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#geraPass').value), document.querySelector('#geraPass').name);getData('Gera');">Ingresar</button>
+                                <!-- Card user Gera-->
+                                <div class="col-lg-3 col-12 mt-3 userCard" id="gera">
+                                    <i class="bi bi-person-circle size3x"></i>
+                                    <h3 id="user2">Gera</h3>
+                                    <div class="passwordField" id="passGera">
+                                        <div class="mb-3">
+                                            <label for="geraPass" class="form-label">Ingresa la contraseña</label>
+                                            <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="geraPass" name="Gera">
+                                            <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#geraPass').value), document.querySelector('#geraPass').name);getData('Gera');">Ingresar</button>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- Card user Maui-->
+                                <div class="col-lg-3 col-12 mt-3 userCard" id="maui">
+                                    <i class="bi bi-person-circle size3x"></i>
+                                    <h3 id="user3">Maui</h3>
+                                    <div class="passwordField" id="passMaui">
+                                        <div class="mb-3">
+                                            <label for="mauiPass" class="form-label">Ingresa la contraseña</label>
+                                            <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="mauiPass" name="Maui">
+                                            <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#mauiPass').value), document.querySelector('#mauiPass').name); getData('Maui');">Ingresar</button>
 
-                            </div>
-
-                            <!-- Card user Maui-->
-                            <div class="col userCard" id="maui">
-                                <i class="bi bi-person-circle size3x"></i>
-                                <h3 id="user3">Maui</h3>
-                                <div class="passwordField" id="passMaui">
-                                    <div class="mb-3">
-                                        <label for="mauiPass" class="form-label">Ingresa la contraseña</label>
-                                        <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="mauiPass" name="Maui">
-                                        <button class="btn btn-primary btn-block my-2" onclick="passVerification(Number(document.querySelector('#mauiPass').value), document.querySelector('#mauiPass').name); getData('Maui');">Ingresar</button>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>

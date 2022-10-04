@@ -22,6 +22,21 @@ window.onload = function getData() {
     }
 }
 
+// ANIMATION APPEAR DEPOSIT FORM
+const appearDeposit = () => {
+    let getSaving = document.querySelector('#savingForm')
+    getSaving.classList.remove('hiddenElement')
+    getSaving.classList.add('visibleElement')
+}
+
+// ANIMATION APPEAR WITHDRAWAL FORM
+const appearWithdrawal = () => {
+    let getSaving = document.querySelector('#withdrawalForm')
+    getSaving.classList.remove('hiddenElement')
+    getSaving.classList.add('visibleElement')
+}
+
+// SAVE MONEY
 function deposit() {
     let amountDeposit = Number(document.querySelector('#saving').value)
     let saldo = JSON.parse(localStorage.getItem('saldo'))
@@ -29,6 +44,21 @@ function deposit() {
         let newSaving = document.querySelector('#accountAmount')
         localStorage.setItem('saldo', `${amountDeposit + saldo}`)
         return newSaving.innerHTML = amountDeposit + saldo
+
+    } else {
+        document.getElementById('errorAccount').innerHTML = 'Monto no válido, debes tener al menos $10 en tu cuenta y máximo $990'
+    }
+}
+
+// WITHDRAW MONEY
+function withdrawal() {
+    let amountWithdrawal = Number(document.querySelector('#withdrawal').value)
+    let saldoRetiro = JSON.parse(localStorage.getItem('saldo'))
+    if (((saldoRetiro - amountWithdrawal) > 10) && ((saldoRetiro - amountWithdrawal) < 990)) {
+        let newWithdrawal = document.querySelector('#accountAmount')
+        localStorage.setItem('saldo', `${saldoRetiro - amountWithdrawal}`)
+        return newWithdrawal.innerHTML = (saldoRetiro - amountWithdrawal)
+
     } else {
         document.getElementById('errorAccount').innerHTML = 'Monto no válido, debes tener al menos $10 en tu cuenta y máximo $990'
     }
