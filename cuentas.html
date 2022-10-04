@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-
 </head>
 
-<body class="background-purple text-light" onload="getData()">
+<body class="background-purple text-light">
     <main>
         <section>
             <div class="container height-100 d-flex">
@@ -30,25 +29,65 @@
                     </div>
                     <div class="col-lg-7 col-md-12">
                         <div class="row px-5">
-                            <div class="col-12 mb-3">
+                            <div class="col-12 mb-3 userCard py-4">
                                 <h2 class="text-center">Bienvenid<span id="accountGender"></span><span id="accountName"></span></h2>
-                                <h3>Tu saldo es $<span id="accountAmount"></span></h3>
-                                <button onclick="appearDeposit()" class="btn btn-primary">Quiero Despositar</button>
-                                <button onclick="appearWithdrawal()" class="btn btn-danger">Quiero Retirar</button>
+                                <h3 class="text-center">Tu saldo es de $<span id="accountAmount"></span></h3>
+                                <p class="text-danger" id="errorAccount"></p>
+
+                                <div class="row justify-content-center mt-5 ">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-2">
+
+                                            </div>
+                                            <div class="col-8">
+                                                <label class="form-label ">¿Cuánto vas a guardar?</label>
+                                                <input type="number" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="saving">
+                                            </div>
+                                            <div class="col-2">
+                                                <input type="button" value="+" class="btnPlus" id="plusSaving" onclick="deposit()">
+                                            </div>
+                                        </div>
+                                        <div class="row px-4">
+                                            <button onclick="appearDeposit()" class="d-block mx-auto btn btn-primary block mt-3
+                                        ">Quiero Despositar</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-2">
+
+                                            </div>
+                                            <div class="col-8">
+                                                <label class="form-label ">¿Cuánto vas a retirar?</label>
+                                                <input type="number" pattern="[0-9]*" inputmode="numeric" maxlength="3" required class="form-control" id="withdrawal">
+                                            </div>
+                                            <div class="col-2">
+                                                <input type="button" value="-" class="btnPlus" id="plusWithdrawal">
+                                            </div>
+
+                                        </div>
+                                        <div class="row px-4">
+                                            <button onclick="appearWithdrawal()" class="d-block mx-auto btn btn-danger block mx-auto mt-3">Quiero Retirar</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p><a href="index.html" class="text-white text-center">Regresar</a></p>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <p><a href="index.html" class="text-white text-center">Regresar</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <!-- Custom Scripts -->
-    <script src="./js/script.js"></script>
+    <script src="./js/object.js"></script>
+    <script src="./js/accounts.js"></script>
+
 </body>
 
 </html>

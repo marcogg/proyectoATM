@@ -55,3 +55,29 @@
     opacity: 1;
     transition: 1.5s;
 }
+
+.btnMinus {
+    background-color: #1b001b;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    width: 32px;
+    color: #ffd4ff;
+    font-weight: bolder;
+    position: relative;
+    top: 33px;
+    left: 25px;
+}
+
+.btnPlus {
+    background-color: purple;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    width: 32px;
+    color: #ffd4ff;
+    font-weight: bolder;
+    position: relative;
+    top: 33px;
+    right: 25px;
+}
